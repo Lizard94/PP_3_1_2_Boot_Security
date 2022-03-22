@@ -10,8 +10,7 @@
 <div align="center">
     <h2>Изменить пользователя</h2>
 <body>
-<form th:action="@{/admin/{id}(id=${user.getId()})}"
-      th:object="${user}" method="POST">
+<form th:action="@{/admin/{id}(id=${user.getId()})}"  th:object="${user}" method="Post">
     <input type="hidden" th:field="*{id}">
     <input name="Username" type="text" th:field="*{username}"  placeholder="Username" autofocus="autofocus"/>
     <br>
